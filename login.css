@@ -1,0 +1,74 @@
+﻿/*win button font*/
+.win-button-font{
+	width:40px;
+	height:40px;
+	border:2px solid #3994a7;
+	border-radius:150px;
+	min-width:40px;
+	font-size:16px;
+	line-height:28px;
+	cursor:pointer;
+}
+	.win-button-font::before{
+		content: "\E0D5";
+		font-family: "Segoe UI Symbol";
+		color:#3994a7;
+		font-weight:normal;
+	}
+	.win-button-font:hover{
+		opacity:0.6 !important;
+		border:2px solid #3994a7;
+	}
+	.win-button-font:active{
+		opacity:0.8 !important;
+		border:2px solid #3994a7 !important;
+		background:none !important;
+	}
+
+.login input{
+    background:#f2f2f2;
+    color:#333;
+    border:2px solid #9e9e9e !important;
+    font-size:15px;
+	width:260px !important;
+    height:36px;
+	padding:0;
+	margin:0;
+	margin-right:20px !important;
+}
+.login input:hover{
+    background:#FEFEFE;
+    border:2px solid #8e8e8e !important;
+}
+.login input:focus{
+    background:#fff;
+    border:2px solid #008299 !important;
+}
+
+html, body,#conten_host {
+    width:100%;
+    height:100%;
+    display:block;
+}
+.login{
+    display:-ms-grid;
+    -ms-grid-columns:1fr 620px 1fr;
+    -ms-grid-rows:1fr 300px 1fr;
+	background:#f2f2f2 !important;
+	overflow:hidden;
+
+    width:100%;
+    height:100%;
+}
+.content{
+	-ms-grid-column:2;
+	-ms-grid-row:2;
+}
+	.content .win-button-font::before{
+		content: "\E111";
+	}
+    .content img {
+        border:none;
+        width:620px;
+        height:300px;
+    }
